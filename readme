@@ -1,0 +1,22 @@
+In package.json the scripts{} section has 2 commands viz. start and server
+start : "node server" is for when we deploy our application on heroku
+server : "nodemon server" is for when we run our application in the local environment
+'server' in 'nodemon server' stands for 'server.js'
+
+config dependency allows to define default values that can be used throughout the application.
+
+Warning : DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+MongoDB connected
+Solution : Add userCreatIndex: true
+
+Await should be added before any function which returns a promise
+
+To run a command in a particular folder, we write the following command in the package.json:
+"client: "npm start --prefix folder_name"
+
+React dependencies command:
+npm i axios react-router-dom redux  react-redux redux-thunk redux-devtools-extension moment react-moment
+
+Whenever a request is made with axios e.g axios.get() we need to specify the entire URL e.g.
+axios.get('http://localhost...')
+To avoid this we can setup a proxy in the package.json of react application to specify the 'http://localhost:3000' part
